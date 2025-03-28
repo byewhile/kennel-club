@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --green: #006953;
+    --lime: #a3e953;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.text-lime {
+    color: var(--lime);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.btn, .btn:hover {
+    background-color: var(--lime);
+    color: var(--green);
+}
+
+details[open] summary {
+    background-color: white !important;
+    color: var(--green) !important;
+}
+
+details summary::before {
+    content: "+ ";
+}
+
+details[open] summary::before {
+    content: "- ";
+}
